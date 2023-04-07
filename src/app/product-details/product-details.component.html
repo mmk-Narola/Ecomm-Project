@@ -1,0 +1,91 @@
+<div class="row product-details" *ngIf="productData">
+  <div class="col-sm-6">
+    <img class="product-img" src="{{ productData.image }}" alt="" />
+  </div>
+  <div class="col-sm-6">
+    <div class="details">
+      <h1>{{ productData.name }}</h1>
+      <h3>Price : {{ productData.price }}</h3>
+
+      <h6>Category : {{ productData.category }}</h6>
+      <h6>Description : {{ productData.description }}</h6>
+      <button
+        class="form-button btn btn-outline-secondary me-2"
+        (click)="buyNow()"
+      >
+        Buy Now
+      </button>
+      <!-- <button class="form-button">Remove to Cart</button> -->
+      <button
+        class="form-button btn btn-outline-primary me-2"
+        (click)="AddToCart()"
+        *ngIf="!removeCart"
+      >
+        Add to Cart
+      </button>
+      <button
+        class="form-button btn btn-outline-primary me-2"
+        (click)="RemoveToCart(productData.id)"
+        *ngIf="removeCart"
+      >
+        Remove Cart
+      </button>
+      <div class="quantity-group">
+        <button
+          class="btn btn-outline-success me-2"
+          (click)="handleQuantity('min')"
+        >
+          -
+        </button>
+        <input type="text" value="{{ productQuantity }}" /> &nbsp;
+        <button
+          class="btn btn-outline-success me-2"
+          (click)="handleQuantity('plus')"
+        >
+          +
+        </button>
+      </div>
+      <br />
+      <button class="form-button btn btn-outline-dark me-2" routerLink="/">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="product-list-wrapper">
+  <h3>Products List</h3>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let item of CategoryProduct">
+      <div class="product-item">
+        <a routerLink="/details/{{ item.id }}">
+          <img src="{{ item.image }}" alt="" />
+        </a>
+        <div class="product-details">
+          <h6 class="name-head">{{ item.name }}</h6>
+          <div class="product-price">
+            <h6>Price:{{ item.price }}</h6>
+          </div>
+        </div>
+        <div class="product-footer">
+          <button class="btn btn-outline-secondary me-2" routerLink="/">
+            View Details
+          </button>
+          <button class="btn btn-outline-dark me-2">Add to Cart</button>
+
+          <!-- <button class="btn btn-outline-dark me-2" *ngIf="removeCart">
+            Remove Cart
+          </button> -->
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="CategoryProduct?.length == 0">
+      <h5>No Similary Product Available</h5>
+    </div>
+
+    <!-- <ng-template [ngIf]="display">
+      <h2>Hello This is Ng Templete Component</h2>
+    </ng-template> -->
+  </div>
+</div>

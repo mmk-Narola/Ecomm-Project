@@ -1,0 +1,51 @@
+<div class="my-orders">
+  <h1>My Orders</h1>
+  <div class="row">
+    <div class="col-sm-2">
+      <span>Orders</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Order Id</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Price</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Status</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Cancel Order</span>
+    </div>
+  </div>
+  <div class="row" *ngFor="let item of orderList">
+    <div class="col-sm-2">
+      <img
+        class="order-img"
+        src="https://icon2.cleanpng.com/20180128/qoe/kisspng-shopping-cart-stock-photography-shopping-bag-click-to-add-to-the-shopping-cart-5a6e0242c9d5c6.8125431815171589788267.jpg"
+        alt=""
+      />
+    </div>
+    <div class="col-sm-2">
+      <span>{{ item.id }}</span>
+    </div>
+    <div class="col-sm-2">
+      <span>{{ item.totalPrice }}</span>
+    </div>
+    <div class="col-sm-2">
+      <span>In Progress</span>
+    </div>
+    <div class="col-sm-2">
+      <button
+        class="form-button btn btn-secondary"
+        (click)="cancelOrder(item.id)"
+      >
+        Cancel Order
+      </button>
+    </div>
+  </div>
+  <div *ngIf="orderList?.length == 0">
+    <h2 style="text-align: center">No Orders Shop Now</h2>
+  </div>
+</div>
+<!--  -->
+<!-- *ngFor="let order of orderData" -->

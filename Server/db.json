@@ -1,0 +1,363 @@
+{
+  "seller": [
+    {
+      "name": "Mahesh Kshirsagar",
+      "email": "mahesh@gmail.com",
+      "password": "mahesh!@123",
+      "id": 1
+    },
+    {
+      "name": "Mk Mohan",
+      "email": "mohan@gmail.com",
+      "password": "mk!@123",
+      "id": 2
+    },
+    {
+      "name": "Sanjay",
+      "email": "sanjayg@gmail.com",
+      "password": "sk@12345",
+      "id": 3
+    },
+    {
+      "name": "bjj",
+      "email": "bjj@gmail.com",
+      "password": "bjj@123",
+      "id": 4
+    },
+    {
+      "name": "abc",
+      "email": "abc@example.com",
+      "password": "abc@123",
+      "id": 5
+    },
+    {
+      "name": "aa",
+      "email": "mmk@narola.email",
+      "password": "asd!@#123",
+      "id": 6
+    },
+    {
+      "name": "MMK",
+      "email": "mahsh@gmail.com",
+      "password": "asd",
+      "id": 7
+    },
+    {
+      "name": "asdxsdxs",
+      "email": "dxadxasdasdadxa",
+      "password": "sasdx",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "name": "iphone",
+      "price": "120000",
+      "category": "Electronic",
+      "description": "iphone 12 pro max",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg",
+      "id": 3
+    },
+    {
+      "name": "Apple iMac",
+      "price": "250000",
+      "category": "Electronic",
+      "description": "Apple iMac full setup ",
+      "image": "https://www.cnet.com/a/img/resize/2fd1147995d81cf3076711cdbf76dffaeec4a3ca/hub/2021/05/17/89b338bc-f958-4cf0-916b-95952f0c2c2e/apple-imac-m1-colors-2021-cnet-2021-084.jpg?auto=webp&fit=crop&height=900&width=1200",
+      "id": 4
+    },
+    {
+      "name": "Smart Watch",
+      "price": "5000",
+      "category": "Electronic",
+      "description": "boat smart watch",
+      "image": "http://cdn.shopify.com/s/files/1/0057/8938/4802/products/3-2.png?v=1653637007",
+      "id": 5
+    },
+    {
+      "name": "Dell Laptop",
+      "price": "65000",
+      "category": "Electronic",
+      "description": "Dell core i5 12 gen 32gb ram , 512 ssd",
+      "image": "https://static.toiimg.com/thumb/resizemode-4,msid-72207442,width-1200,height-900/72207442.jpg",
+      "id": 6
+    },
+    {
+      "name": "Samsung Tv",
+      "price": "45520",
+      "category": "Electronic",
+      "description": "Samsung 42-inch Android TV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85-xnbTBcgE1nSDRezUc-I26B2qx68bWCQ&usqp=CAU",
+      "id": 7
+    },
+    {
+      "name": "Zara Jacket",
+      "price": "7510",
+      "category": "fashion",
+      "description": "zara color jacket",
+      "image": "https://static.zara.net/photos///2022/I/0/3/p/5854/722/743/2/w/1920/5854722743_6_1_1.jpg?ts=1657625963963",
+      "id": 8
+    },
+    {
+      "name": "zara bomber",
+      "price": "6000",
+      "category": "fashion",
+      "description": "zara bomber green ",
+      "image": "https://static.zara.net/photos///2022/I/0/3/p/5644/758/500/2/w/438/5644758500_6_1_1.jpg?ts=1662632821526",
+      "id": 9
+    },
+    {
+      "name": "Story Book",
+      "price": "263",
+      "category": "book",
+      "description": "Hungle Story book",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/SA/IQ/HS/49559104/img-20210211-121925-1000x1000.jpg",
+      "id": 10
+    },
+    {
+      "name": "Buard",
+      "price": "6500",
+      "category": "Electronic",
+      "description": "boat buard",
+      "image": "http://cdn.shopify.com/s/files/1/0057/8938/4802/products/viper-green_c8ee2092-a201-41d5-a17e-7ae4bc16af8d.png?v=1658824212",
+      "id": 11
+    },
+    {
+      "name": "noice buds",
+      "price": "3000",
+      "category": "Electronic",
+      "description": "noice power pack bugd",
+      "image": "https://m.media-amazon.com/images/I/61xftZKXvwL._SY450_.jpg",
+      "id": 12
+    },
+    {
+      "name": "Nike Sport shoes",
+      "price": "8450",
+      "category": "fashion",
+      "description": "Nike pro run sport shoes",
+      "image": "https://n2.sdlcdn.com/imgs/i/z/e/ASIAN-Gray-Running-Shoes-SDL797926121-1-18463.jpg",
+      "id": 13
+    },
+    {
+      "name": "Gym Equipment",
+      "price": "35000",
+      "category": "health",
+      "description": "super petro gym equipment set",
+      "image": "https://i2.wp.com/primofitnessusa.com/wp-content/uploads/2020/10/Muscle-D-Package-1.jpg",
+      "id": 14
+    }
+  ],
+  "user": [
+    {
+      "name": "Many John",
+      "email": "mg@gmail.com",
+      "password": "mg!@123",
+      "id": 1
+    },
+    {
+      "name": "Yash P",
+      "email": "ykp@gmail.com",
+      "password": "ykp@123",
+      "id": 4
+    },
+    {
+      "name": "sagar Patel",
+      "email": "spp@gmail.com",
+      "password": "spp@123",
+      "id": 5
+    },
+    {
+      "name": "New Man",
+      "email": "nm@gmail.com",
+      "password": "nm@123",
+      "id": 6
+    }
+  ],
+  "cart": [
+    {
+      "name": "Samsung Tv",
+      "price": "45520",
+      "category": "Electronic",
+      "description": "Samsung 42-inch Android TV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85-xnbTBcgE1nSDRezUc-I26B2qx68bWCQ&usqp=CAU",
+      "quantity": 1,
+      "productId": 7,
+      "userId": 5,
+      "id": 8
+    },
+    {
+      "name": "Zara Jacket",
+      "price": "7510",
+      "category": "fashion",
+      "description": "zara color jacket",
+      "image": "https://static.zara.net/photos///2022/I/0/3/p/5854/722/743/2/w/1920/5854722743_6_1_1.jpg?ts=1657625963963",
+      "quantity": 1,
+      "productId": 8,
+      "userId": 5,
+      "id": 9
+    },
+    {
+      "name": "Story Book",
+      "price": "263",
+      "category": "book",
+      "description": "Hungle Story book",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/SA/IQ/HS/49559104/img-20210211-121925-1000x1000.jpg",
+      "quantity": 1,
+      "productId": 10,
+      "userId": 5,
+      "id": 10
+    },
+    {
+      "name": "Samsung Tv",
+      "price": "45520",
+      "category": "Electronic",
+      "description": "Samsung 42-inch Android TV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85-xnbTBcgE1nSDRezUc-I26B2qx68bWCQ&usqp=CAU",
+      "quantity": 1,
+      "productId": 7,
+      "userId": 5,
+      "id": 11
+    },
+    {
+      "name": "Zara Jacket",
+      "price": "7510",
+      "category": "fashion",
+      "description": "zara color jacket",
+      "image": "https://static.zara.net/photos///2022/I/0/3/p/5854/722/743/2/w/1920/5854722743_6_1_1.jpg?ts=1657625963963",
+      "quantity": 1,
+      "productId": 8,
+      "userId": 5,
+      "id": 12
+    },
+    {
+      "name": "Story Book",
+      "price": "263",
+      "category": "book",
+      "description": "Hungle Story book",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/SA/IQ/HS/49559104/img-20210211-121925-1000x1000.jpg",
+      "quantity": 1,
+      "productId": 10,
+      "userId": 5,
+      "id": 13
+    },
+    {
+      "name": "Story Book",
+      "price": "263",
+      "category": "book",
+      "description": "Hungle Story book",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/SA/IQ/HS/49559104/img-20210211-121925-1000x1000.jpg",
+      "productId": 10,
+      "userId": 2,
+      "id": 21
+    },
+    {
+      "name": "Gym Equipment",
+      "price": "35000",
+      "category": "health",
+      "description": "super petro gym equipment set",
+      "image": "https://i2.wp.com/primofitnessusa.com/wp-content/uploads/2020/10/Muscle-D-Package-1.jpg",
+      "productId": 14,
+      "userId": 2,
+      "id": 22
+    },
+    {
+      "name": "noice buds",
+      "price": "3000",
+      "category": "Electronic",
+      "description": "noice power pack bugd",
+      "image": "https://m.media-amazon.com/images/I/61xftZKXvwL._SY450_.jpg",
+      "productId": 12,
+      "userId": 2,
+      "id": 23
+    },
+    {
+      "name": "Buard",
+      "price": "6500",
+      "category": "Electronic",
+      "description": "boat buard",
+      "image": "http://cdn.shopify.com/s/files/1/0057/8938/4802/products/viper-green_c8ee2092-a201-41d5-a17e-7ae4bc16af8d.png?v=1658824212",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 11,
+      "id": 24
+    },
+    {
+      "name": "Dell Laptop",
+      "price": "65000",
+      "category": "Electronic",
+      "description": "Dell core i5 12 gen 32gb ram , 512 ssd",
+      "image": "https://static.toiimg.com/thumb/resizemode-4,msid-72207442,width-1200,height-900/72207442.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 6,
+      "id": 25
+    },
+    {
+      "name": "Dell Laptop",
+      "price": "65000",
+      "category": "Electronic",
+      "description": "Dell core i5 12 gen 32gb ram , 512 ssd",
+      "image": "https://static.toiimg.com/thumb/resizemode-4,msid-72207442,width-1200,height-900/72207442.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 6,
+      "id": 26
+    },
+    {
+      "name": "Samsung Tv",
+      "price": "45520",
+      "category": "Electronic",
+      "description": "Samsung 42-inch Android TV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85-xnbTBcgE1nSDRezUc-I26B2qx68bWCQ&usqp=CAU",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 7,
+      "id": 27
+    },
+    {
+      "name": "Samsung Tv",
+      "price": "45520",
+      "category": "Electronic",
+      "description": "Samsung 42-inch Android TV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85-xnbTBcgE1nSDRezUc-I26B2qx68bWCQ&usqp=CAU",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 7,
+      "id": 28
+    },
+    {
+      "name": "Samsung Tv",
+      "price": "45520",
+      "category": "Electronic",
+      "description": "Samsung 42-inch Android TV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85-xnbTBcgE1nSDRezUc-I26B2qx68bWCQ&usqp=CAU",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 7,
+      "id": 29
+    },
+    {
+      "name": "iphone",
+      "price": "120000",
+      "category": "Electronic",
+      "description": "iphone 12 pro max",
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg",
+      "quantity": 1,
+      "userId": 4,
+      "productId": 3,
+      "id": 32
+    },
+    {
+      "name": "Samsung Tv",
+      "price": "45520",
+      "category": "Electronic",
+      "description": "Samsung 42-inch Android TV",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_85-xnbTBcgE1nSDRezUc-I26B2qx68bWCQ&usqp=CAU",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 7,
+      "id": 33
+    }
+  ],
+  "orders": []
+}

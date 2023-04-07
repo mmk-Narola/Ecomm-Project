@@ -1,0 +1,84 @@
+<div class="user-auth">
+  <div class="sign-up" *ngIf="!isLogin">
+    <h1>User Singup</h1>
+    <form
+      class="common-form"
+      #userSignUp="ngForm"
+      (ngSubmit)="signUp(userSignUp.value)"
+    >
+      <input
+        type="text"
+        class="form-input"
+        placeholder="Enter Name"
+        name="name"
+        ngModel
+      />
+
+      <input
+        type="text"
+        class="form-input"
+        placeholder="Enter Email"
+        name="email"
+        ngModel
+      />
+      <input
+        type="password"
+        class="form-input"
+        placeholder="Enter Password"
+        name="password"
+        ngModel
+      />
+      <button class="form-button">Sign Up</button>
+      <a class="auth-toggle-link" (click)="SingUpLogin('login')">
+        Already have account? Click for Login
+      </a>
+    </form>
+    <h3 class="error-text">{{ authError }}</h3>
+  </div>
+
+  <div class="login" *ngIf="isLogin">
+    <h1>User Login</h1>
+
+    <form
+      class="common-form"
+      #userLogin="ngForm"
+      (ngSubmit)="login(userLogin.value)"
+    >
+      <h3 class="error-text">{{ authError }}</h3>
+      <input
+        type="text"
+        class="form-input"
+        placeholder="Enter Email"
+        name="email"
+        ngModel
+        #email="ngModel"
+        required
+      />
+      <p class="invalid-input">
+        <span *ngIf="email.invalid && email.touched">
+          Please enter valid input
+        </span>
+      </p>
+      <input
+        type="password"
+        class="form-input"
+        placeholder="Enter Password"
+        name="password"
+        ngModel
+        minlength="3"
+        maxlength="20"
+        #password="ngModel"
+        required
+      />
+      <p class="invalid-input">
+        <span *ngIf="password.invalid && password.touched">
+          Please enter valid input
+        </span>
+      </p>
+      <button [disabled]="userLogin.invalid" class="form-button">Login</button>
+      <a class="auth-toggle-link" (click)="SingUpLogin('singpup')"
+        >Don't Have Account? Click for SignUp</a
+      >
+    </form>
+  </div>
+</div>

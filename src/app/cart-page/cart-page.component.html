@@ -1,0 +1,62 @@
+<div class="cart-page">
+  <h2>Cart Page</h2>
+  <div class="row">
+    <div class="col-sm-8 cart-details" *ngFor="let item of cartDetails">
+      <ul>
+        <li>
+          <img src="{{ item.image }}" alt="Cart image" srcset="" />
+        </li>
+        <li>
+          <span>Name: {{ item.name }}</span>
+        </li>
+        <li>
+          <span>Price: {{ item.price }}</span>
+        </li>
+        <li>
+          <span>Quantity: {{ item.quantity }}</span>
+        </li>
+        <li>
+          <span>Total Price: {{ item.price * item.quantity }}</span>
+        </li>
+        <li>
+          <button
+            class="btn btn-outline-success form-button"
+            (click)="removeToCart(item.id)"
+          >
+            Remove Cart
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-sm-4 cart-summary">
+      <h3>Summary</h3>
+      <ul>
+        <li>
+          <span>Amount:</span><span>{{ priceSummary.price }}</span>
+        </li>
+        <li>
+          <span>Tax:</span><span>{{ priceSummary.tax }}</span>
+        </li>
+        <li>
+          <span>Delivery:</span><span>{{ priceSummary.delivery }}</span>
+        </li>
+        <li>
+          <span>Discount:</span><span>{{ priceSummary.discount }}</span>
+        </li>
+        <li>
+          <span><h5>Total:</h5></span>
+          <span>
+            <h6>{{ priceSummary.total | currency }}</h6>
+          </span>
+        </li>
+        <button
+          class="form-buttonb btn btn-outline-dark max-width"
+          (click)="checkout()"
+        >
+          Checkout
+        </button>
+      </ul>
+    </div>
+  </div>
+</div>

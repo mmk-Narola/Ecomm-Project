@@ -1,0 +1,47 @@
+<nav class="nav">
+  <h3 routerLink="/">MgEcomm.in</h3>
+  <div *ngIf="headerMenuType !== 'seller'" he class="nav-search">
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="Search Project......"
+      #searchInput
+    />
+    <button (click)="searcInput(searchInput.value)">Search</button>
+  </div>
+
+  <div [ngSwitch]="headerMenuType">
+    <ul *ngSwitchCase="'default'">
+      <li><a routerLink="/seller-auth">Seller</a></li>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/user-auth">Login/SingUp</a></li>
+      <li>
+        <a>Cart({{ cartItem }})</a>
+      </li>
+    </ul>
+
+    <ul *ngSwitchCase="'user'">
+      <li><a routerLink="/">Home</a></li>
+      <li>
+        <a>{{ UserName | titlecase }}</a>
+      </li>
+      <li><a (click)="userLogout()">Logout</a></li>
+      <li><a routerLink="my-orders">My Order</a></li>
+      <li>
+        <a [routerLink]="cartItem > 0 ? 'cart-page' : null"
+          >Cart({{ cartItem }})</a
+        >
+      </li>
+    </ul>
+
+    <ul *ngSwitchCase="'seller'">
+      <li><a routerLink="/seller-add-product">Add Product</a></li>
+      <li><a routerLink="/seller-home"> List</a></li>
+      <li><a routerLink="/" (click)="logout()">Logout</a></li>
+      <li>
+        <a>{{ sellerName | titlecase }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

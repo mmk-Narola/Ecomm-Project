@@ -1,0 +1,59 @@
+<div class="add-product">
+  <h1
+    style="
+      margin-top: 50px;
+      margin-bottom: 35px;
+      color: blueviolet;
+      text-align: center;
+    "
+  >
+    {{ isEditMode ? "Edit Product" : "Add Product" }}
+  </h1>
+  <h2 style="margin-top: 60px; color: green; text-align: center">
+    {{ addProuctMessage }}
+  </h2>
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="common-form">
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Name"
+      name="name"
+      formControlName="name"
+    />
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Price"
+      name="price"
+      formControlName="price"
+    />
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Category"
+      name="category"
+      formControlName="category"
+    />
+
+    <textarea
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Description"
+      name="description"
+      formControlName="description"
+    ></textarea>
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Image Url"
+      name="image"
+      formControlName="image"
+    />
+    <button class="form-button">
+      {{ isEditMode ? "Update Product" : "Add Product" }}
+    </button>
+  </form>
+</div>
